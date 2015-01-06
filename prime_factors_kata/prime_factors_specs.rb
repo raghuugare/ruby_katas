@@ -8,6 +8,6 @@ describe PrimeFactors do
   Given(:pf) { PrimeFactors.new }
 
   Then {pf != nil}
-  
+  Then {pf.generate(1).should =~ []}
 
 end
